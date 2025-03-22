@@ -16,7 +16,7 @@ module.exports = {
         }
 
         const query = encodeURIComponent(args.join(" "));
-        const apiUrl = `https://apis-i26b.onrender.com/ytsdlmp3?q=${query}`;
+        const apiUrl = `https://apis-rho-nine.vercel.app/ytsdlmp3?q=${query}`;
 
         try {
             api.setMessageReaction("⏳", messageID, () => {}, true);
