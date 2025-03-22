@@ -3,6 +3,7 @@
     "axios": "^1.8.4",
     "expess": "^0.0.1-security",
     "express": "^4.21.2",
+    "npmlog": "^7.0.1",
     "pidusage": "^4.0.0",
     "ws3-fca": "^1.0.47"
   }
