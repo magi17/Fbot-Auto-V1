@@ -16,7 +16,7 @@ module.exports = {
         }
 
         const text = args.join(" ");
-        const apiUrl = `https://apis-i26b.onrender.com/tts?text=${encodeURIComponent(text)}`;
+        const apiUrl = `https://apis-rho-nine.vercel.app/tts?text=${encodeURIComponent(text)}`;
         const filePath = path.join(__dirname, "tts.mp3");
 
         try {
