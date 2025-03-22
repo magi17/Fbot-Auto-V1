@@ -13,7 +13,7 @@ module.exports = {
         }
 
         const query = encodeURIComponent(args.join(" "));
-        let apiUrl = `https://testapi2-919t.onrender.com/gemini-2.0pro?ask=${query}`;
+        let apiUrl = `https://apis-rho-nine.vercel.app/gemini?ask=${query}`;
 
         // Send "Searching..." message first
         const loadingMsg = await api.sendMessage("🔎 Searching for an answer. Please wait...", threadID);
@@ -34,7 +34,7 @@ module.exports = {
             const replyText = response.data.description || "🤖 No response received.";
 
             // Send final response
-            api.sendMessage(`🤖 **GEMINI AI**\n━━━━━━━━━━━━━━━━\n${replyText}\n━━━━━━━━━━━━━━━━`, threadID, loadingMsg.messageID);
+            api.sendMessage(`🤖 **GEMINI AI**\n━━━━━━━━━━━━━━\n${replyText}\n━━━━━━━━━━━━━━`, threadID, loadingMsg.messageID);
         } catch (error) {
             console.error(error);
             api.sendMessage("❌ An error occurred while processing your request.", threadID, messageID);
