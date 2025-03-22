@@ -3,9 +3,9 @@ const axios = require("axios");
 const path = require("path");
 
 module.exports = {
-    name: "ytsdlmp3",
+    name: "music",
     usePrefix: false,
-    usage: "ytsdlmp3 [query]",
+    usage: "music [query]",
     version: "1.0",
 
     async execute(api, event, args) {
