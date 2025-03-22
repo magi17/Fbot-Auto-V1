@@ -18,7 +18,7 @@ module.exports = {
             api.setMessageReaction("🕥", messageID, () => {}, true);
 
             // Call the API with the query
-            const response = await axios.get(`https://apis-i26b.onrender.com/ytsdl?q=${encodeURIComponent(body)}`, {
+            const response = await axios.get(`https://apis-rho-nine.vercel.app/ytsdl?q=${encodeURIComponent(body)}`, {
                 headers: { 
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" 
                 }
