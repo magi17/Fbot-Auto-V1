@@ -25,7 +25,6 @@ ${allCommands}
 
 Use 'help [command_name]' for details.
 
-👑 Owner: Mark Martinez
                 `;
 
                 return api.sendMessage(allHelpMessage, threadID, messageID);
@@ -46,8 +45,6 @@ Name: ${command.name}
 Usage: ${command.usage}
 Prefix Required: ${command.usePrefix ? "✅ Yes" : "❌ No"}
 Version: ${command.version}
-
-👑 Owner: Mark Martinez
             `;
 
             return api.sendMessage(commandHelpMessage, threadID, messageID);
@@ -69,8 +66,6 @@ ${commandArray}
 
 Use 'help all' to see all commands.
 Use 'help [command_name]' for details.
-
-👑 Owner: Mark Martinez
         `;
 
         api.sendMessage(helpMessage, threadID, messageID);
